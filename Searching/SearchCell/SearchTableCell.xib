@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableCell" id="KGk-i7-Jjw" customClass="SearchTableCell" customModule="DalmiaBestPrice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAQ-vW-rhf" customClass="SubHeadingLabel" customModule="DalmiaBestPrice" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="267" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-fh-YdY">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qP7-2c-BJ9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAN-th-3PP">
+                        <rect key="frame" x="295" y="10" width="20" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="CUQ-FF-rCI"/>
+                        </constraints>
+                        <state key="normal" image="close-button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VAQ-vW-rhf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5oN-vJ-vH0"/>
+                    <constraint firstItem="Mfs-fh-YdY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8CB-s4-zQy"/>
+                    <constraint firstItem="Mfs-fh-YdY" firstAttribute="top" secondItem="nAN-th-3PP" secondAttribute="bottom" constant="13" id="9K7-mW-I3U"/>
+                    <constraint firstAttribute="bottom" secondItem="Mfs-fh-YdY" secondAttribute="bottom" id="Bi7-8H-agf"/>
+                    <constraint firstItem="VAQ-vW-rhf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KE8-2H-zJD"/>
+                    <constraint firstItem="nAN-th-3PP" firstAttribute="leading" secondItem="VAQ-vW-rhf" secondAttribute="trailing" constant="8" id="NZo-rr-8OD"/>
+                    <constraint firstItem="nAN-th-3PP" firstAttribute="top" secondItem="VAQ-vW-rhf" secondAttribute="top" id="TDd-ps-tBg"/>
+                    <constraint firstAttribute="trailing" secondItem="Mfs-fh-YdY" secondAttribute="trailing" id="ez1-wh-pkZ"/>
+                    <constraint firstItem="nAN-th-3PP" firstAttribute="centerY" secondItem="VAQ-vW-rhf" secondAttribute="centerY" id="s6b-UA-cLg"/>
+                    <constraint firstAttribute="trailing" secondItem="nAN-th-3PP" secondAttribute="trailing" constant="5" id="uh0-a5-ihT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelete" destination="nAN-th-3PP" id="tlm-3i-tos"/>
+                <outlet property="lblSearch" destination="VAQ-vW-rhf" id="nxr-RK-25i"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close-button" width="15" height="15"/>
+    </resources>
+</document>
